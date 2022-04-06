@@ -49,7 +49,7 @@
                 android:id="@+id/button14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
+                android:text="アニメ"
                 android:layout_weight="1"
                 app:backgroundTint="#50BA54" />
         </TableRow>
@@ -63,7 +63,7 @@
                 android:id="@+id/button15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
+                android:text="映画"
                 android:layout_weight="1"
                 app:backgroundTint="#50BA54" />
         </TableRow>
@@ -79,7 +79,7 @@
                 android:id="@+id/button16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
+                android:text="本"
                 android:layout_weight="1"
                 app:backgroundTint="#50BA54" />
         </TableRow>
@@ -93,7 +93,7 @@
                 android:id="@+id/button17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
+                android:text="漫画"
                 android:layout_weight="1"
                 app:backgroundTint="#50BA54" />
         </TableRow>
