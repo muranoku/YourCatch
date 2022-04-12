@@ -22,7 +22,7 @@ class MainActivity2 : AppCompatActivity() {
 
         anime1.setOnClickListener {
             loginAlert()
-            //val intent = Intent(this,MainActivity3::class.java)
+            val intent = Intent(this,MainActivity3::class.java)
             //startActivity(intent)
         }
 
@@ -34,5 +34,6 @@ class MainActivity2 : AppCompatActivity() {
             .setTitle("YourCatch ログイン")
             .setMessage("会員登録が必要です")
             .show()
+
     }
 }
