@@ -23,7 +23,7 @@ class MainActivity2 : AppCompatActivity() {
         anime1.setOnClickListener {
             loginAlert()
             val intent = Intent(this,MainActivity3::class.java)
-            //startActivity(intent)
+            startActivity(intent)
         }
 
 
