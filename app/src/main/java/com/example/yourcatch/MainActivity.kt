@@ -20,7 +20,11 @@ class MainActivity : AppCompatActivity() {
         btnAnime.setOnClickListener {
             val intent = Intent(this,MainActivity2::class.java)
             startActivity(intent)
+        }
 
+        btnMovie.setOnClickListener {
+            val intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
         }
 
 
