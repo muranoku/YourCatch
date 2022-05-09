@@ -18,16 +18,11 @@ class MainActivity2 : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
-        val anime1:ImageView = findViewById(R.id.anime1)
 
-        anime1.setOnClickListener {
-            loginAlert()
-            val intent = Intent(this,MainActivity3::class.java)
-            startActivity(intent)
-        }
 
 
     }
+
 
     private fun loginAlert() {
         AlertDialog.Builder(this)
