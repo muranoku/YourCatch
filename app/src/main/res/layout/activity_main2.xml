@@ -18,22 +18,34 @@
     <EditText
         android:id="@+id/edt_mail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:layout_below="@id/app_icon"
         android:layout_marginTop="18dp"
         android:hint="Email"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edt_background"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"/>
 
     <EditText
         android:id="@+id/edt_pass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:layout_below="@id/edt_mail"
         android:layout_marginTop="18dp"
         android:hint="Password"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="13dp"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_pass"
+        android:text="ログイン"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"/>
 
 
 
