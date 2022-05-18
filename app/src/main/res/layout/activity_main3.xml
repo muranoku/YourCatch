@@ -1,27 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6A2A2"
+    android:background="#BDF67B"
     tools:context=".MainActivity3">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="エイティシック"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:src="@drawable/app_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="78dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="643dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edt_mail"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/edt_name"
+        android:layout_marginTop="18dp"
+        android:hint="Email"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edt_background"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/app_icon"
+        android:layout_marginTop="18dp"
+        android:hint="Name"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edt_background"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"/>
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@id/edt_mail"
+        android:layout_marginTop="18dp"
+        android:hint="Password"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="13dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"/>
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_pass"
+        android:text="サインアップ"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"/>
+
+
+
+
+</RelativeLayout>
