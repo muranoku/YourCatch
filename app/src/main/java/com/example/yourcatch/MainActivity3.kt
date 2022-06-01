@@ -28,6 +28,10 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
 
+        edtEmail.setOnClickListener {
+
+        }
+
 
 
     }
