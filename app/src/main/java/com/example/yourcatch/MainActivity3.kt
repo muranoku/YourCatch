@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.CancellationSignal
 import android.widget.Button
 import android.widget.EditText
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity3 : AppCompatActivity() {
 
@@ -14,9 +15,13 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var btnLogin:Button
     private lateinit var btnSignup:Button
 
+    private lateinit var mAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
+
+        mAuth = FirebaseAuth.getInstance()
 
         edtEmail = findViewById(R.id.edt_mail)
         edtPassword = findViewById(R.id.edt_pass)
@@ -28,11 +33,17 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnLogin.setOnClickListener {
+            val email = edtEmail.text.toString()
+            val password = edtPassword.text.toString()
+
+            login(email,password)
+        }
         edtEmail.setOnClickListener {
 
         }
-
-
+    }
+    private fun login(email: String, password: String){
 
     }
 }
