@@ -21,6 +21,7 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
+        mAuth = FirebaseAuth.getInstance()
         edtEmail = findViewById(R.id.edt_mail)
         edtPassword = findViewById(R.id.edt_pass)
         btnLogin = findViewById(R.id.btnLogin)
