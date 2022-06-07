@@ -22,6 +22,8 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
+        supportActionBar?.hide()
+
         mAuth = FirebaseAuth.getInstance()
 
         edtEmail = findViewById(R.id.edt_mail)
